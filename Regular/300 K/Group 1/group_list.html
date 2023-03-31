@@ -1,32 +1,96 @@
+
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Group List</title>
-  </head>
-  <body>
-    <table width="100%" border="1">
-        <thead>
+<head>
+    <style>
+        #customers {
+            font-family: sans-serif;
+            padding: 10px;
+            margin: auto;
+            border-collapse: collapse;
+            height: 40%;
+            width: 70%;
+            position: absolute;
+
+
+            
+
+
+        }
+        #customers tr,td,th{
+            border:none;
+            padding: 8px;
+
+        }
+
+            
+        
+        #row2{
+            background-color: rgba(178, 50, 99, 0.1);
+        }
+        #customers th{
+            padding-top: 12px;
+            padding-bottom: 15px;
+            text-align:center ;
+            background-color:dimgrey;
+           
+            color: white;
+        }
+        #row1{
+            background-color:lightsteelblue;
+        }
+        #row3{
+            height: 50px;
+            background-color: lightsteelblue;
+            border-collapse: collapse;
+        }
+        #footer{
+            text-align: center;
+            color: black;
+            background-color: lightsteelblue;
+        }
+        
+        
+        
+    </style>
+    </head>
+    <body>
+        <table id="customers" border="1">
+            <thead>
             <tr>
-                <th colspan="4">Group List</th>
+                <th>Column 1</th>
+                <th>Column 2</th>
+                <th>Column 3</th>
             </tr>
-            <tr>
-                <th>Index Number</th>
-                <td>Full Name</td>
-                <td>Email</td>
-                <td>Telephone</td>
+            </thead>
+            <tbody>
+            <tr id="row1">
+                <td>row 1 , column 1</td>
+                <td>row 1 , column 2</td>
+                <td>row 1 , column 3</td>
             </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+            <tr id="row2">
+                <td>row 2 , column 1</td>
+                <td>row 2 , column 1-2</td>
+                <td>row 2 , column 3</td>
             </tr>
-        </tbody>
-    </table>
-  </body>
-</html>
+            <tr id="row3">
+                <td rowspan="2">row 3, column 1</td>
+                <td>row 3 , column 2</td>
+                <td  >row 3 , column 3</td>
+            
+            </tr>
+            </tbody>
+            <tfoot>
+                <tr id="footer">
+                    <td colspan="3">Table footer</Table></td>
+                </tr>
+            </tfoot>
+
+        
+
+        </table>
+        
+    
+
+    
+    </body>
